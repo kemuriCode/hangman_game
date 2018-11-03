@@ -4,6 +4,7 @@ import "./words";
 import words from "./words";
 import ShowWord from "./components/game_view/ShowWord";
 import BadLetters from "./components/bad_letters/BadLetters";
+import SubmitForm from "./components/game_view/SubmitForm";
 
 class App extends Component {
 
@@ -19,6 +20,7 @@ class App extends Component {
         <h2>let's start the game</h2>
           {this.state.word}
           <ShowWord word={this.state.word} guessedLetters={this.state.guessedLetters}/>
+          <SubmitForm />
           <BadLetters word={this.state.word} guessedLetters={this.state.guessedLetters}/>
       </div>
     );
