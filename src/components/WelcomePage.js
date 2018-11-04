@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const WelcomePage = () => (
     <div className="jumbotron">
-        <h1 className="display-3">HANGMAN GAME</h1>
-        <h2 className="display-3">created by Marcin Dymek</h2>
+        <h1 className="display-3">MINIMALISTIC HANGMAN GAME</h1>
+        <h1 className="display-5">created by Marcin Dymek</h1>
         <p className="lead">Prosta gra w Wisielca</p>
+        <Link to="/game" className="btn btn-primary btn-lg" herf="#" role="button">START</Link>
     </div>
 );
 
