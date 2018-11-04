@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./ShowWord.css";
 
 class ShowWord extends Component {
 

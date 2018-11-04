@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
+import WelcomePage from "./components/WelcomePage";
 import "./words";
 import words from "./words";
 import ShowWord from "./components/game_view/ShowWord";
 import BadLetters from "./components/bad_letters/BadLetters";
 import SubmitForm from "./components/game_view/SubmitForm";
+
 
 class App extends Component {
 
@@ -53,7 +55,7 @@ class App extends Component {
 
     updateGameState(letter){
         this.updateGuessedLetters(letter)
-        this.updateGuessesRemaining(letter)
+        this.updateGuessesRemaining()
         this.gameOver()
     }
 
