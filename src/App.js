@@ -8,10 +8,14 @@ import SubmitForm from "./components/game_view/SubmitForm";
 
 class App extends Component {
 
-    state = {
-        word: words[Math.floor(Math.random() * words.length)], // randomowe losowanie słów
-        guessedLetters: [],
-        guessesRemaining: 5
+    constructor(props) {
+        super(props)
+        this.state = {
+            word: words[Math.floor(Math.random() * words.length)], // randomowe losowanie słów
+            guessedLetters: [],
+            guessesRemaining: 5
+        }
+        console.log(this.state.word)
     }
 
     updateGuessedLetters = (letter) => {
@@ -59,10 +63,9 @@ class App extends Component {
       <div className="hangman">
         <h1>!HANGMAN GAME!</h1>
         <h2>let's start the game</h2>
-          <h3>{this.state.guessesRemaining}</h3>
-          {this.state.word}
+          <h3>Ile Ci żyćka zostalo: {this.state.guessesRemaining}</h3>
           <ShowWord word={this.state.word} guessedLetters={this.state.guessedLetters}/>
-          <SubmitForm updateGameState={this.updateGameState} />
+          <SubmitForm checkLetter={ (letter) => this.updateGameState(letter)} />
           <BadLetters word={this.state.word} guessedLetters={this.state.guessedLetters}/>
       </div>
     );

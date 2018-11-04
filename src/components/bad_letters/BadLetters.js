@@ -12,7 +12,7 @@ class BadLetters extends Component {
     render() {
         return (
             <div className="BadLetters">
-
+                <h4>złe strzały: {this.getBadLetters()}</h4>
             </div>
         );
     }
