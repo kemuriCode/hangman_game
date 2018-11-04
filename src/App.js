@@ -53,7 +53,7 @@ class App extends Component {
 
     updateGameState(letter){
         this.updateGuessedLetters(letter)
-        this.updateGuessesRemaining()
+        this.updateGuessesRemaining(letter)
         this.gameOver()
     }
 

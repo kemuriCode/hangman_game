@@ -15,7 +15,7 @@ class SubmitForm extends Component {
             <div className="SubmitForm">
                 <form onSubmit={this._handleSubmit.bind(this)}>
                     <input type="text" ref='textInput' maxLength='1' />
-                    <button>SUBMIT</button>
+                    <button>STRZELAJ</button>
                 </form>
             </div>
         );
