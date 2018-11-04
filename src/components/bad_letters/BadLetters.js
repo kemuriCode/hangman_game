@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./BadLetters.css";
 
 class BadLetters extends Component {
 
@@ -12,7 +11,7 @@ class BadLetters extends Component {
     render() {
         return (
             <div className="BadLetters">
-                <h4>bad shots: <p class="text-danger">{this.getBadLetters()}</p></h4>
+                <h4>bad shots: <p className="text-danger">{this.getBadLetters()}</p></h4>
             </div>
         );
     }
