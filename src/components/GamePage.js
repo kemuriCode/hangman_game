@@ -61,7 +61,7 @@ class GamePage extends Component {
             <div className="jumbotron">
                 <div className="hangman">
                     <h1 className="display-3">GAME PANEL</h1>
-                    <h2>let's start the game</h2>
+                    <h2>Let's start the game</h2>
                     <h3>How many chances you have: {this.state.guessesRemaining}</h3>
                     <ShowWord word={this.state.word} guessedLetters={this.state.guessedLetters}/>
                     <SubmitForm checkLetter={ (letter) => this.updateGameState(letter)} />
