@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./SubmitForm.css";
 
 class SubmitForm extends Component {
 
@@ -13,8 +14,8 @@ class SubmitForm extends Component {
     render() {
         return (
             <div className="SubmitForm">
-                <form onSubmit={this._handleSubmit.bind(this)}>
-                    <input className="border-5" type="text" ref='textInput' maxLength='1' placeholder="one small letter pls"/>
+                <form onSubmit={this._handleSubmit.bind(this)} className="form">
+                    <input type="text" ref='textInput' maxLength={1} placeholder="one small letter pls"/>
                     <button className="btn btn-primary mb-2" >SHOT!</button>
                 </form>
             </div>

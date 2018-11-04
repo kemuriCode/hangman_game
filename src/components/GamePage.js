@@ -35,9 +35,11 @@ class GamePage extends Component {
 
     gameOver(){
         if(this.state.guessesRemaining <= 0) {
-            alert('You Have Lost')
+            alert('You Have Lost'); window.location.reload()
+
+
         } else if (this.wordIsGuessed()) {
-            alert(`YOU WON! Guessed word is: ${this.state.word}`)
+            alert(`YOU WON! Guessed word is: ${this.state.word}`); window.location.reload()
         }
     }
 
@@ -46,6 +48,7 @@ class GamePage extends Component {
             if(this.state.guessedLetters.includes(letter)) {
                 return letter
             }
+            return 0
         })
         return guessState.join('') === this.state.word
     }
