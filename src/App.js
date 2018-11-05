@@ -10,15 +10,13 @@ class App extends Component {
     return (
       <div className="hangman">
         <main className="container">
-          <Switch>
-            <Route exact path="/" component={WelcomePage} />
+            <Switch>
+              <Route exact path="/" component={WelcomePage} />
               <Route exact path="/game" component={GamePage} />
               <Route exact path="/*" component={NotFound}/>
-        </Switch>
+            </Switch>
         </main>
       </div>
-
-
     );
   }
 }

@@ -2,15 +2,12 @@ import React, { Component } from "react";
 import "./SubmitForm.css";
 
 class SubmitForm extends Component {
-
     _handleSubmit = (e) =>{
        e.preventDefault()
         const letter = this.refs.textInput.value
         this.props.checkLetter(letter)
         this.refs.textInput.value = ''
-
     }
-
     render() {
         return (
             <div className="SubmitForm">

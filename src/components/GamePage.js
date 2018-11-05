@@ -21,7 +21,7 @@ class GamePage extends Component {
         if (this.state.guessedLetters.includes(letter)) {
             alert(`You already guessed ${letter}`)
         } else {
-            this.setState({
+            this.setState( {
                 guessedLetters: [...this.state.guessedLetters, letter]
             })
         }
@@ -36,14 +36,12 @@ class GamePage extends Component {
     gameOver(){
         if(this.state.guessesRemaining <= 0) {
             alert('You Have Lost'); window.location.reload()
-
-
         } else if (this.wordIsGuessed()) {
             alert(`YOU WON! Guessed word is: ${this.state.word}`); window.location.reload()
         }
     }
 
-    wordIsGuessed(){
+    wordIsGuessed() {
         const guessState = this.state.word.split('').map(letter => {
             if(this.state.guessedLetters.includes(letter)) {
                 return letter
@@ -76,9 +74,7 @@ class GamePage extends Component {
                     </div>
                 </div>
         );
-
     }
-
 }
 
 export default GamePage;
