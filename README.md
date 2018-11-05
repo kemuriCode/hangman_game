@@ -2,7 +2,7 @@
 
 # React Hangman Game
 
-###created by *t0shifollow* 
+**created by *t0shifollow*** 
 
 ## System And IDE
 
