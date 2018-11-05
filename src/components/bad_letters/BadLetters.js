@@ -10,7 +10,7 @@ class BadLetters extends Component {
     }
     render() {
         return (
-            <div className="BadLetters">
+            <div>
                 <h4>bad shots: <p className="text-danger">{this.getBadLetters()}</p></h4>
             </div>
         );

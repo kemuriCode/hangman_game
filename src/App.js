@@ -8,8 +8,8 @@ import NotFound from "./components/NotFound";
 class App extends Component {
   render() {
     return (
-      <div className="hangman">
-        <main className="container">
+      <div className="container">
+        <main className="main">
             <Switch>
               <Route exact path="/" component={WelcomePage} />
               <Route exact path="/game" component={GamePage} />

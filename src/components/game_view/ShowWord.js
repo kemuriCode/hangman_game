@@ -12,7 +12,7 @@ class ShowWord extends Component {
         })
         return (
             <div className="ShowWord">
-                <h3>{answer}</h3>
+                <h3 className="text-primary">{answer}</h3>
             </div>
         );
     }

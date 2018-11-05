@@ -59,20 +59,22 @@ class GamePage extends Component {
 
     render() {
         return (
-            <div className="jumbotron">
-                <div className="hangman">
-                    <h1 className="display-3">GAME PANEL</h1>
-                    <h2>Let's start the game</h2>
-                    <h3>How many chances you have: {this.state.guessesRemaining}</h3>
-                    <ShowWord word={this.state.word} guessedLetters={this.state.guessedLetters}/>
-                    <SubmitForm checkLetter={ (letter) => this.updateGameState(letter)} />
-                    <BadLetters word={this.state.word} guessedLetters={this.state.guessedLetters}/>
+            <div className="container">
+                <div className="jumbotron">
+                    <div>
+                        <h1 className="display-3">GAME PANEL</h1>
+                        <h2>Let's start the game</h2>
+                        <h3>How many chances you have: {this.state.guessesRemaining}</h3>
+                        <ShowWord word={this.state.word} guessedLetters={this.state.guessedLetters}/>
+                        <SubmitForm checkLetter={ (letter) => this.updateGameState(letter)} />
+                        <BadLetters word={this.state.word} guessedLetters={this.state.guessedLetters}/>
                         <div className="modal-footer">
                             <Link onClick={this.forceUpdate} to={'/game'} className="btn btn-primary btn-lg" herf="#" role="button">RELOAD</Link>
                             <Link onClick={this.forceUpdate} to={'/'} className="btn btn-primary btn-lg" herf="#" role="button">BACK</Link>
                         </div>
                     </div>
                 </div>
+            </div>
         );
     }
 }

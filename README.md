@@ -15,7 +15,7 @@
 ```sh
 create-react-app
 yarn install # install dependencies
-yarn add bootswatch
+yarn add bootswatch # some nice looking bootstrap themes
 
 ```
 
