@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 import "./App.css";
-import WelcomePage from "./components/WelcomePage";
-import GamePage from "./components/GamePage";
-import NotFound from "./components/NotFound";
+import WelcomePage from "./components/welcomePage";
+import GamePage from "./components/gamePage";
+import NotFound from "./components/notFound";
 
 class App extends Component {
   render() {
@@ -11,8 +11,8 @@ class App extends Component {
       <div className="container">
         <main className="main">
             <Switch>
-              <Route exact path="/" component={WelcomePage} />
-              <Route exact path="/game" component={GamePage} />
+              <Route exact path="/" component={WelcomePage}/>
+              <Route exact path="/game" component={GamePage}/>
               <Route exact path="/*" component={NotFound}/>
             </Switch>
         </main>
