@@ -10,7 +10,7 @@ class GamePage extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            word: words[Math.floor(Math.random() * words.length)], // randomowe losowanie słów
+            word: words[Math.floor(Math.random() * words.length)],
             guessedLetters: [],
             guessesRemaining: 5
         }
