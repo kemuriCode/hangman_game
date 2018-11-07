@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./SubmitForm.css";
+import "./SubmitForm.scss";
 
 class SubmitForm extends Component {
     _handleSubmit = (e) =>{

@@ -62,10 +62,10 @@ class GamePage extends Component {
     render() {
         return (
             <div className="container">
-                <div className="jumbotron">
+                <div className="jumbotron text-white">
                     <div>
-                        <h1 className="display-3">GAME PANEL</h1>
-                        <h2>Let's start the game</h2>
+                        <h1 className="display-2">GAME PANEL</h1>
+                        <h2>Let's start the game!</h2>
                         <h3>How many chances you have: {this.state.guessesRemaining}</h3>
                         <ShowWord word={this.state.word} guessedLetters={this.state.guessedLetters}/>
                         <SubmitForm checkLetter={ (letter) => this.updateGameState(letter)}/>

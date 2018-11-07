@@ -37,3 +37,6 @@ yarn start
 * update guess state
 * repeat until the game is over
 * game over: word is guessed or out of guesses
+
+### Background URL
+ background image:<br> http://www.gamesetwatch.com/Screenshot-5.jpg<br> from game: LIMBO
