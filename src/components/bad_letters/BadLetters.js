@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./sass/main.scss";
 
 class BadLetters extends Component {
   getBadLetters() {
