@@ -16,7 +16,7 @@
 create-react-app
 yarn install # install dependencies
 yarn add bootswatch # some nice looking bootstrap themes
-
+yarn add bootswatch-sass
 ```
 
 ## Production Start
@@ -30,7 +30,7 @@ yarn start
 * randomly choose a word
 
 * display the correctly guessed letters. (with underscores for missing letters)
-* display the letters not yet guessed <br>
+* display the letters not yet guessed
 
 * form (let user guess a letter)
 * check if the letter is in the word
@@ -40,3 +40,5 @@ yarn start
 
 ### Background URL
  background image:<br> http://www.gamesetwatch.com/Screenshot-5.jpg<br> from game: LIMBO
+ 
+ **little trick: if you can't guess the word, turn on the console in the browser ;)**
