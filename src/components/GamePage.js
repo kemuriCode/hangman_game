@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./sass/main.scss"
 import words from "../words";
 import ShowWord from "./game_view/ShowWord";
 import SubmitForm from "./game_view/SubmitForm";
@@ -12,7 +13,7 @@ class GamePage extends Component {
         this.state = {
             word: words[Math.floor(Math.random() * words.length)],
             guessedLetters: [],
-            guessesRemaining: 5
+            guessesRemaining: 6
         }
         console.log(this.state.word)
     }
@@ -64,9 +65,9 @@ class GamePage extends Component {
             <div className="container">
                 <div className="jumbotron text-white">
                     <div>
-                        <h1 className="display-2">GAME PANEL</h1>
+                        <h1 className="display-3">GAME PANEL</h1>
                         <h2>Let's start the game!</h2>
-                        <h3>How many chances you have: {this.state.guessesRemaining}</h3>
+                        <h3 className="display-6">How many chances you have: {this.state.guessesRemaining}</h3>
                         <ShowWord word={this.state.word} guessedLetters={this.state.guessedLetters}/>
                         <SubmitForm checkLetter={ (letter) => this.updateGameState(letter)}/>
                         <BadLetters word={this.state.word} guessedLetters={this.state.guessedLetters}/>

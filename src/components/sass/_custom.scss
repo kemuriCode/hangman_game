@@ -1,0 +1,44 @@
+@import "functions";
+
+body
+{
+  background-size: cover;
+  background: url(../images/back.jpg);
+}
+
+@include mq('phone','max') {
+    .display-3
+    {
+      font-size: 2rem;
+    }
+    .display-6
+    {
+      font-size: 1rem;
+    }
+    p
+    {
+      font-size: 1rem;
+    }
+  }
+
+.container
+{
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.form input {
+  padding: 6px 0;
+}

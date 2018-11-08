@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import './App.scss';
+import './components/sass/main.scss';
 import WelcomePage from './components/welcomePage';
 import GamePage from './components/GamePage';
 import NotFound from './components/notFound';

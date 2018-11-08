@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import 'bootswatch/dist/sketchy/bootstrap.css';
-import './index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
