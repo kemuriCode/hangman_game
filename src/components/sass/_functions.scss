@@ -1,4 +1,4 @@
-//mixin
+//mixins and functions
 
 $breakpoints: (
         "phone":        360px,
@@ -28,7 +28,6 @@ $breakpoints: (
   white-space: normal;
 }
 
-
 @mixin padding($top, $right, $bottom, $left) {
   padding: $top $right $bottom $left;
 }
@@ -36,4 +35,3 @@ $breakpoints: (
 @mixin margin($top, $right, $bottom, $left) {
   margin: $top $right $bottom $left;
 }
-
