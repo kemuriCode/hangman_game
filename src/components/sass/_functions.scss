@@ -22,12 +22,18 @@ $breakpoints: (
   }
 }
 
-// functions
-
-@function set-text-color($color){
-  @if (lightness($color) > 50){
-    @return $black;
-  } @else{
-    @return $white;
-  }
+@mixin text-shorten {
+  overflow: auto;
+  text-overflow: ellipsis;
+  white-space: normal;
 }
+
+
+@mixin padding($top, $right, $bottom, $left) {
+  padding: $top $right $bottom $left;
+}
+
+@mixin margin($top, $right, $bottom, $left) {
+  margin: $top $right $bottom $left;
+}
+

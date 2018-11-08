@@ -3,7 +3,10 @@
 body
 {
   background-size: cover;
-  background: url(../images/back.jpg);
+  min-height:100%;
+  background: url(../images/back.jpg) no-repeat fixed;
+  background-size: cover;
+
 }
 
 @include mq('phone','max') {
@@ -24,12 +27,8 @@ body
 .container
 {
   text-align: center;
-  padding-top: 1.5rem;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-top: 1rem;
-  margin-right: auto;
-  margin-left: auto;
+  @include padding(1.5rem,15px,auto,15px);
+  @include margin(1rem,auto,auto,auto);
 }
 
 .form {
@@ -41,4 +40,9 @@ body
 
 .form input {
   padding: 6px 0;
+}
+
+.jumbotron
+{
+  @include text-shorten;
 }
