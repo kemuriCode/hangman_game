@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./sass/main.scss"
+import "../sass/main.scss"
 import words from "../words";
 import ShowWord from "./game_view/ShowWord";
 import SubmitForm from "./game_view/SubmitForm";
@@ -22,14 +22,14 @@ class GamePage extends Component {
         if (this.state.guessedLetters.includes(letter)) {
             alert(`You already guessed ${letter}`)
         } else {
-            this.setState( {
+            this.setState({
                 guessedLetters: [...this.state.guessedLetters, letter]
             })
         }
     }
 
     updateGuessesRemaining(letter) {
-        if (!this.state.guessedLetters.includes(letter) && !this.state.word.split('').includes(letter)){
+        if (!this.state.guessedLetters.includes(letter) && !this.state.word.split('').includes(letter)) {
             this.setState({guessesRemaining: this.state.guessesRemaining -1})
         }
     }
@@ -66,7 +66,7 @@ class GamePage extends Component {
                 <div className="jumbotron text-white">
                     <div>
                         <h1 className="display-3">GAME PANEL</h1>
-                        <h2 className="display-6">Let's start the game!</h2>
+                        <h2 className="display-5">Let's start the game!</h2>
                         <h3 className="display-6">How many chances you have: {this.state.guessesRemaining}</h3>
                         <ShowWord word={this.state.word} guessedLetters={this.state.guessedLetters}/>
                         <SubmitForm checkLetter={ (letter) => this.updateGameState(letter)}/>

@@ -23,7 +23,7 @@ $breakpoints: (
 }
 
 @mixin text-shorten {
-  overflow: auto;
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
 }
