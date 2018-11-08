@@ -15,9 +15,15 @@
 ```sh
 create-react-app
 yarn install # install dependencies
-yarn add bootswatch # some nice looking bootstrap themes
-yarn add bootswatch-sass
 ```
+## What I Use
+
+* bootswatch
+
+* bootswawtch-sass
+
+* ESlint -> sometimes :)
+
 
 ## Production Start
 
@@ -30,12 +36,17 @@ yarn start
 * randomly choose a word
 
 * display the correctly guessed letters. (with underscores for missing letters)
+
 * display the letters not yet guessed
 
 * form (let user guess a letter)
+
 * check if the letter is in the word
+
 * update guess state
+
 * repeat until the game is over
+
 * game over: word is guessed or out of guesses
 
 ### Background URL
