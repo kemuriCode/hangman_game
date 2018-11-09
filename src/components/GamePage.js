@@ -4,6 +4,7 @@ import words from "../words";
 import ShowWord from "./game_view/ShowWord";
 import SubmitForm from "./game_view/SubmitForm";
 import BadLetters from "./bad_letters/BadLetters";
+import BackButton from "./game_view/BackButton";
 import { Link } from "react-router-dom";
 
 class GamePage extends Component {
@@ -11,7 +12,7 @@ class GamePage extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            word: words[Math.floor(Math.random() * words.length)],
+            word: words[Math.floor(Math.random() * words.length)], // pick up random words
             guessedLetters: [],
             guessesRemaining: 6
         }
@@ -73,7 +74,7 @@ class GamePage extends Component {
                         <BadLetters word={this.state.word} guessedLetters={this.state.guessedLetters}/>
                         <div className="modal-footer">
                             <Link onClick={this.forceUpdate} to={'/game'} className="btn btn-primary btn-lg" herf="#" role="button">RELOAD</Link>
-                            <Link onClick={this.forceUpdate} to={'/'} className="btn btn-primary btn-lg" herf="#" role="button">BACK</Link>
+                            <BackButton/>
                         </div>
                     </div>
                 </div>
