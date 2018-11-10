@@ -9,6 +9,27 @@
   * Ubuntu 18.04 LTS
   * WebStorm and sometimes VS Code
 
+## Project Image
+
+![img1](
+        hangman_game/public/readme_img/screen1.png
+        )
+![img2](
+        hangman_game/public/readme_img/screen2.png
+      )
+![img3](
+        hangman_game/public/readme_img/screen3.png
+      )
+![img4](
+        hangman_game/public/readme_img/screen4.png
+      )
+![img5](
+        hangman_game/public/readme_img/responsive1.png
+      )
+![img6](
+        hangman_game/public/readme_img/responsive2.png
+      )
+      
 
 ## Setup
 
