@@ -12,22 +12,22 @@
 ## Project Image
 
 ![img1](
-        hangman_game/public/readme_img/screen1.png
+        https://github.com/t0shifollow/hangman_game/public/readme_img/screen1.png
         )
 ![img2](
-        hangman_game/public/readme_img/screen2.png
+        https://github.com/t0shifollow/hangman_game/public/readme_img/screen2.png
       )
 ![img3](
-        hangman_game/public/readme_img/screen3.png
+        https://github.com/t0shifollow/hangman_game/public/readme_img/screen3.png
       )
 ![img4](
-        hangman_game/public/readme_img/screen4.png
+        https://github.com/t0shifollow/hangman_game/public/readme_img/screen4.png
       )
 ![img5](
-        hangman_game/public/readme_img/responsive1.png
+        https://github.com/t0shifollow/hangman_game/public/readme_img/responsive1.png
       )
 ![img6](
-        hangman_game/public/readme_img/responsive2.png
+        https://github.com/t0shifollow/hangman_game/public/readme_img/responsive2.png
       )
       
 
