@@ -12,23 +12,29 @@
 ## Project Image
 
 ![img1](
-        https://github.com/t0shifollow/hangman_game/public/readme_img/screen1.png
+        public/readme_img/screen1.png
         )
+        
 ![img2](
-        https://github.com/t0shifollow/hangman_game/public/readme_img/screen2.png
+        public/readme_img/screen2.png
       )
+      
 ![img3](
-        https://github.com/t0shifollow/hangman_game/public/readme_img/screen3.png
+        public/readme_img/screen3.png
       )
+      
 ![img4](
-        https://github.com/t0shifollow/hangman_game/public/readme_img/screen4.png
+        public/readme_img/screen4.png
       )
+      
 ![img5](
-        https://github.com/t0shifollow/hangman_game/public/readme_img/responsive1.png
+        public/readme_img/responsive1.png
       )
+      
 ![img6](
-        https://github.com/t0shifollow/hangman_game/public/readme_img/responsive2.png
+        public/readme_img/responsive2.png
       )
+      
       
 
 ## Setup
