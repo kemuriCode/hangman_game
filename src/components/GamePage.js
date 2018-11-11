@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import "../sass/main.scss"
 import words from "../words";
-import ShowWord from "./game_view/ShowWord";
-import SubmitForm from "./game_view/SubmitForm";
-import BadLetters from "./bad_letters/BadLetters";
-import BackButton from "./game_view/BackButton";
+import ShowWord from "./game_panel/ShowWord";
+import SubmitForm from "./game_panel/SubmitForm";
+import BadLetters from "./game_panel/BadLetters";
+import BackButton from "./game_panel/BackButton";
 import { Link } from "react-router-dom";
 
 class GamePage extends Component {
